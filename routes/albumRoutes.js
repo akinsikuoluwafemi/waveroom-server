@@ -37,7 +37,6 @@ const upload = multer({ storage: storage }).single("file");
 // @access Public
 router.post('/', upload, createAlbum);
 
-router.get('/')
 
 // @desc Get all albums by id from db
 // @route GET /api/albums/:id
