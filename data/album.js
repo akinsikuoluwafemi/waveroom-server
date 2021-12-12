@@ -1,6 +1,6 @@
 const albums = [
   {
-     albumUrl: "https://i.scdn.co/image/ab67616d000048516c2d97f4d6f2b20890cd14aa",
+      albumUrl: "https://i.scdn.co/image/ab67616d000048516c2d97f4d6f2b20890cd14aa",
       alignment: "left",
       artist: "Davido",
       background: "light",

@@ -1,11 +1,39 @@
 const mongoose = require('mongoose');
 
 const AlbumSchema = new mongoose.Schema({
-  name: {
+  albumUrl: {
     type: String,
     required: true,
   },
+  alignment: {
+    type: String,
+    required: true
+  },
+  artist: {
+    type: String,
+    required: true
+  },
+  background: {
+    type: String,
+    required: true
+  },
   description: {
+    type: String,
+    required: true
+  },
+  frameChoice: {
+    type: String,
+    required: true
+  },
+  posterColor: {
+    type: String,
+    required: true
+  },
+  quantity: {
+    type: Number,
+    required: true
+  },
+  posterSize: {
     type: String,
     required: true
   },
@@ -13,36 +41,16 @@ const AlbumSchema = new mongoose.Schema({
     type: Number,
     required: true
   },
-  artist: {
-    type: String,
-    required: true
-  },
-  theme: {
-    type: String,
-    required: true
-  },
-  waveformStyle: {
-    type: String,
-    required: true
-  },
-  color: {
-    type: String,
-    required: true
-  },
-  length: {
+  total: {
     type: Number,
     required: true
   },
-  breadth: {
-    type: Number,
-    required: true
-  },
-  reviews: {
-    type: Number,
-    required: true
-  },
-  posterImageUrl: {
+   title: {
     type: String,
+    required: true
+  },
+   total_tracks: {
+    type: Number,
     required: true
   }
   
