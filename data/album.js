@@ -1,34 +1,37 @@
 const albums = [
   {
-    name: "Made in Lagos",
-    description:
-      "Made in Lagos is the forth studio (and second major label) album by Nigerian singer Wizkid. It was released on 30 October 2020 by Starboy Entertainment",
-    price: 30,
-    artist: "Wizkid",
-    theme: "modern",
-    waveformStyle: "simple",
-    color: "#d3b593",
-    length: 18,
-    breadth: 12,
-    reviews: 244,
-    posterImageUrl:
-      "https://media.pitchfork.com/photos/5fa6fce323b17a901fd1ec65/1:1/w_600/Wizkid.jpg",
+     albumUrl: "https://i.scdn.co/image/ab67616d000048516c2d97f4d6f2b20890cd14aa",
+      alignment: "left",
+      artist: "Davido",
+      background: "light",
+      description: "Nice Description",
+      frameChoice: "Black Gallery Frame",
+      id: "2",
+      posterColor: "#ac4d8f",
+      quantity: 1,
+      posterSize: "18 X 24",
+      price: 20,
+      total: 20,
+      title: "A better time",
+      total_tracks: 15
   },
   {
-    name: "Easy on me",
-    description:
-      "Easy on Me is a song recorded by British singer-songwriter Adele, for her upcoming fourth studio album, 30 (2021). It was released 15 October 2021",
-    price: 50,
-    artist: "Adele",
-    theme: "classic",
-    waveformStyle: "detailed",
-    color: "#d3b593",
-    length: 24,
-    breadth: 18,
-    reviews: 250,
-    posterImageUrl:
-      "https://deadline.com/wp-content/uploads/2021/10/Adele-e1634256422599.jpg?w=875",
+      albumUrl: "https://i.scdn.co/image/ab67616d000048516c2d97f4d6f2b20890cd14aa",
+      alignment: "center",
+      artist: "Adele",
+      background: "light",
+      description: "studio album by English singer-songwriter Adele, released on 19 November 2021 by Melted Stone and Columbia Records. The album centers on Adele's divorce",
+      frameChoice: "No Frame (Poster Only)",
+      id: "2DAh6Er0J8AxZDu6W1pjAW",
+      posterColor: "#ac4d8f",
+      quantity: 1,
+      posterSize: "18 X 24",
+      price: 30,
+      total: 30,
+      title: "21",
+      total_tracks: 11
   },
+  
 ];
 
 module.exports = albums
