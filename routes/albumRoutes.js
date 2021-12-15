@@ -17,25 +17,10 @@ const {
 router.get('/', getAllAlbums);
 
 
-// create storage
-const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, "images");
-  },
-  filename: function (req, file, cb) {
-    cb(null, Date.now() + "-" + file.originalname);
-  },
-});
-
-
-// upload parameters for multer
-
-const upload = multer({ storage: storage }).single("file");
-
 // @desc Post an album to the db
 // @route POST /api/albums
 // @access Public
-router.post('/', upload, createAlbum);
+router.post('/', createAlbum);
 
 
 // @desc Get all albums by id from db
