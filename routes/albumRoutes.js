@@ -8,6 +8,8 @@ const {
   getAllAlbums,
   getAllAlbumsById,
   createAlbum,
+  updateAlbumById,
+  deleteAlbumById,
 } = require("../controller/albumControllers");
 
 
@@ -27,5 +29,16 @@ router.post('/', createAlbum);
 // @route GET /api/albums/:id
 // @access Public
 router.get('/:id', getAllAlbumsById);
+
+// @desc Put all albums by id from db
+// @route PUT /api/albums/:id
+// @access Public
+router.put('/:id', updateAlbumById);
+
+// @desc Delete all albums by id from db
+// @route delete /api/albums/:id
+// @access Public
+router.delete('/:id', deleteAlbumById);
+
 
 module.exports = router;

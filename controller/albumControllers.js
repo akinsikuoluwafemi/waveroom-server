@@ -16,8 +16,6 @@ const createAlbum = async (req, res) => {
       return;
     }
 
-
-
     // upload to cloudinary
     const result = await cloudinary.uploader.upload(req.body.imgBase64);
 
@@ -82,10 +80,36 @@ const getAllAlbumsById = async (req, res) => {
   }
 };
 
+const updateAlbumById = async (req, res) => {
+  try {
+    const album = await Album.findByIdAndUpdate(req.params.id, req.body, {
+      new: true,
+    });
+    res.json(album);
+
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: "Server error" });
+  }
+  
+}
+
+const deleteAlbumById = async (req, res) => {
+  try {
+    const album = await Album.findByIdAndDelete(req.params.id);
+    res.json(album);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Server error" });
+  }
+}
+
 module.exports = {
   createAlbum,
   getAllAlbums,
   getAllAlbumsById,
+  updateAlbumById,
+  deleteAlbumById,
 };
 
 
