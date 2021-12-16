@@ -96,7 +96,7 @@ const updateAlbumById = async (req, res) => {
 
 const deleteAlbumById = async (req, res) => {
   try {
-    await Album.findByIdAndDelete(req.params.id);
+    delete await Album.findByIdAndDelete(req.params.id);
     res.send({ message: "Album deleted successfully!" });
   } catch (error) {
     console.error(error);
