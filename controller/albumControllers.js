@@ -96,8 +96,8 @@ const updateAlbumById = async (req, res) => {
 
 const deleteAlbumById = async (req, res) => {
   try {
-    const album = await Album.findByIdAndDelete(req.params.id);
-    res.json(album);
+    await Album.findByIdAndDelete(req.params.id);
+    res.send({ message: "Album deleted successfully!" });
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: "Server error" });
